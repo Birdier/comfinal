@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Adurite Digital Store</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><h1>Adurite<span>.org</span></h1></a>
+      </div>
+      <button class="menu-toggle-btn" id="menuToggleBtn">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn">🌙 Dark</button>
+        <a href="cart.html" class="cart-link">Cart <span class="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
 
+  <main class="container">
+    <div class="legal-card">
+      <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Contact Support</h2>
+      <p>Have an issue with an asset download link or need enterprise licensing verification? Reach out below.</p>
+      
+      <form id="contactForm" onsubmit="event.preventDefault(); alert('Message dispatched! Our support team will reply within 24 hours.'); this.reset();">
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;">Full Name</label>
+          <input type="text" required style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-main);">
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;">Email Address</label>
+          <input type="email" required style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-main);">
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <label style="display: block; font-weight: 600; margin-bottom: 0.4rem;">Message</label>
+          <textarea rows="5" required style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-surface); color: var(--text-main); font-family: inherit;"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Transmit Inquiry</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Adurite.org. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
