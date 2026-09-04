@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adurite - Premium developer assets, software licenses, and digital UI templates.">
+  <title>Adurite Digital Store - Premium Digital Products</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><h1>Adurite<span>.org</span></h1></a>
+      </div>
+      <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Toggle Navigation">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn">🌙 Dark</button>
+        <a href="cart.html" class="cart-link" aria-label="Shopping Cart">
+          Cart <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Premium Digital Resources</h2>
+        <p>Curated design kits, developer utilities, and architectural guides built for high-output engineering teams.</p>
+        <a href="products.html" class="btn btn-primary">Browse All Resources</a>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Built for Modern Workflows</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Delivery</h3>
+            <p>Signed download links dispatched directly to your inbox post-transaction.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>Commercial Clearance</h3>
+            <p>Uncapped commercial licensing for client delivery, software, and production apps.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💬</div>
+            <h3>Direct Engineering Support</h3>
+            <p>Direct communication and technical assistance for all templates and source scripts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+        <h2 class="section-title">Featured Releases</h2>
+        <div class="product-grid" id="featuredProductGrid">
+          <!-- Dynamically injected via main.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Adurite.org</h4>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">Modern digital assets and developer tools built for production-grade reliability.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Store Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Digital Catalog</a></li>
+            <li><a href="about.html">About Adurite</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal & Security</h4>
+          <ul>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Adurite.org. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
