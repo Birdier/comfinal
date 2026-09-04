@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - Adurite Digital Store</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <a href="index.html"><h1>Adurite<span>.org</span></h1></a>
+      </div>
+      <button class="menu-toggle-btn" id="menuToggleBtn">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle-btn" id="themeToggleBtn">🌙 Dark</button>
+        <a href="cart.html" class="cart-link">Cart <span class="cart-count">0</span></a>
+      </div>
+    </div>
+  </header>
 
+  <main class="container products-section">
+    <h2 class="section-title">Digital Products Catalog</h2>
+    
+    <div class="search-filter-bar">
+      <div class="search-box">
+        <input type="text" id="catalogSearch" placeholder="Search templates, guides, or software tools...">
+      </div>
+      <div class="filters-group">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="design">Design Kits</button>
+        <button class="filter-btn" data-filter="software">Software Tools</button>
+        <button class="filter-btn" data-filter="guides">Reference Guides</button>
+      </div>
+    </div>
+
+    <div class="product-grid" id="catalogGrid">
+      <!-- Injected via main.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Adurite.org. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
